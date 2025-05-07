@@ -1,5 +1,5 @@
 import './Projects.css';
-import project1 from '../assets/images/project1.png'; // replace with your image
+// import project1 from '../assets/images/project1.png'; // replace with your image
 
 function Projects() {
   return (
@@ -7,7 +7,7 @@ function Projects() {
       <h2>Projects</h2>
       <div className="projects-grid">
         <div className="project-card">
-          <img src={project1} alt="Project 1" />
+          {/* <img src={project1} alt="Project 1" /> */}
           <h3>Project Title</h3>
           <p>Short description of the project, tools used, and purpose.</p>
         </div>
