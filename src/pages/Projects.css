@@ -1,0 +1,26 @@
+.projects-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  

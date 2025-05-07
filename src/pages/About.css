@@ -1,0 +1,12 @@
+.about-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  
