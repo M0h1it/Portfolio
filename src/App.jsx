@@ -7,7 +7,7 @@ import {
   AnimatePresence,
   useSpring,
 } from "framer-motion";
-import { ArrowRight, ExternalLink, Send, Menu, X } from "lucide-react";
+import { ArrowRight, ExternalLink, Send, Menu, X ,Linkedin, Github, Mail} from "lucide-react";
 
 const SectionHeading = ({ title, subtitle }) => (
   <div className="relative mb-12 md:mb-20">
@@ -179,7 +179,7 @@ const ContactSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setStatus("sending");
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formRef.current, "YOUR_PUBLIC_KEY")
+    emailjs.sendForm("service_euiubm7", "template_qtqgvzq", formRef.current, "eaUe-ZJkLFTil9P6F")
       .then(() => setStatus("success"), (error) => { console.log(error.text); setStatus("error"); setTimeout(() => setStatus("idle"), 3000); });
   };
   return (
@@ -467,11 +467,52 @@ export default function App() {
 
       <ContactSection />
 
-      <footer className="py-16 md:py-20 px-5 md:px-8 text-center bg-[#FDFBF7]">
-        <p className="text-[10px] font-black tracking-[0.5em] md:tracking-[0.8em] text-[#2D2D2D]/20 uppercase">
-          © 2026 Mohit — Engineering New Frontiers
-        </p>
-      </footer>
+      <footer className="py-16 md:py-20 px-5 md:px-8 bg-[#FDFBF7]">
+  <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
+
+    {/* Social Icons */}
+    <div className="flex items-center gap-8">
+      <a
+        href="https://www.linkedin.com/in/mohit-kumar-b2a80a20a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
+        aria-label="LinkedIn"
+      >
+        <div className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center group-hover:bg-[#D46A4C] transition">
+          <Linkedin size={18} className="group-hover:text-white" />
+        </div>
+      </a>
+
+      <a
+        href="https://github.com/M0h1it"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group"
+        aria-label="GitHub"
+      >
+        <div className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center group-hover:bg-[#D46A4C] transition">
+          <Github size={18} className="group-hover:text-white" />
+        </div>
+      </a>
+
+      <a
+        href="mailto:mohit.janjadiya@gmail.com"
+        className="group"
+        aria-label="Email"
+      >
+        <div className="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center group-hover:bg-[#D46A4C] transition">
+          <Mail size={18} className="group-hover:text-white" />
+        </div>
+      </a>
+    </div>
+
+    {/* Copyright */}
+    <p className="text-[10px] font-black tracking-[0.5em] md:tracking-[0.8em] text-[#2D2D2D]/20 uppercase text-center">
+      © 2026 Mohit — Engineering New Frontiers
+    </p>
+  </div>
+</footer>
     </div>
   );
 }
