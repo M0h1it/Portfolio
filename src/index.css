@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FDFBF7; /* Warm Linen Background */
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    color: #2D2D2D; /* Deep Charcoal for readability */
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#contact {
+  margin-top: -100px;
+  position: relative;
+  z-index: 20;
+}
